@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markedshallen</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="#">
+        <img class="logo" src="/img/logo.png" alt="logo" />
+      </a>
+      <img class="menu" src="/img/hamburgermenu.png" alt="hamburgermenu">
+    </header>
+    <div class="hero">
+        <h1>
+            <span class="break">I MADAKTØRERNES</span><br />
+            <span class="break">PARADIS</span><br />
+            <span class="break">PÅ AARHUS Ø</span>
+        </h1>
+        <img class="arrow-down" src="img/pil.png" alt="arrow down" />
+    </div>
+    <img class="food-menu" src="img/FORSIDE2.jpg" alt="menu" />
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <button onclick="togglePopup()" class="popup-close">x</button>
+            <h2 class="popup-heading">Hej!</h2>
+            <p class="popup-text">Brug for hjælp til <span class="break"> hvad du skal have</span><span>at spise?</span></p>
+            <div class="gap">
+                <button onclick="showImage()" class="btn">Ja</button>
+                <button onclick="togglePopup()" class="btn">Nej</button>
+            </div>
+        </div>
+    </div>
+    <img id="option" onclick="showImage()" class="hidden option" src="img/option.png" alt="option">
+  </body>
+</html>
